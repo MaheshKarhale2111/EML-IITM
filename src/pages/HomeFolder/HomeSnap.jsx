@@ -10,17 +10,7 @@ export default function HomeSnap() {
 
 
       <div className="snap-wrap">
-        {/* // disabled in css */}
-        {/* {<Navbar />} */}
         {<HomeHero />}
-        {/* <section className="second">
-                        <h1>{HomeContent[1].title} </h1>
-                    </section> */}
-
-
-
-
-
         <div className="sub-wrap">
           <section className="diro"  >
             {/* // this is animate on scroll library  */}
@@ -37,8 +27,8 @@ export default function HomeSnap() {
               </div>
               <div data-aos="fade-up" data-aos-duration="900" data-aos-offset="150"
               >
-                <h4>{HomeContent[0].content[0]} </h4>
-                <h4>{HomeContent[0].content[1]} </h4>
+                <h4>&#x275D; {HomeContent[0].content[0]}</h4>
+                <h4> "{HomeContent[0].content[1]}&#x275E;</h4>
               </div>
 
             </div>

@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function TeammateCard(props) {
 
-    const { name, posn, img, vertical } = props.data;
+    const { name, posn } = props.data;
 
     var bootstrapClass;
     if (posn === "Faculty Advisor") {

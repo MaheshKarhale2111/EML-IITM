@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import "../../css/root.css";
 import "./Navbar.css";
 import { NavLink, Link } from "react-router-dom";
@@ -23,6 +23,13 @@ function Navbar() {
 
 
   };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground);
+    return () => {
+      window.removeEventListener('scroll', changeBackground);
+    };
+  }, []);
 
   const navBgStyle = {
     backgroundColor: navBg,
