@@ -17,8 +17,8 @@ export default function TeamMain() {
                     {TeammateData.map((e) => <TeammateCard data={e} key={e.id} />)}
                 </div>
                 </div>   
-            </section>
             <Footer />
+            </section>
         </>
     )
 }

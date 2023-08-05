@@ -1,39 +1,72 @@
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../../css/root.css";
 import "./Navbar.css";
 import { NavLink, Link } from "react-router-dom";
 
 
 function Navbar() {
-  const [navBg, setNavBg] = useState("tranparent");
 
-  const changeBackground = () => {
-    console.log(window.scrollY);
-    if (window.scrollY < 300) {
-      setNavBg("transparent");
-    } else if (window.scrollY >= 300 && window.scrollY < 810) {
-      setNavBg("#10112e");
-    } else if (window.scrollY >= 810 && window.scrollY < 1770) {
-      setNavBg("#10112e");
-    } else if (window.scrollY >= 1770 && window.scrollY < 2720) {
-      setNavBg("#383656");
-    } else if (window.scrollY >= 2720) {
-      setNavBg("#25252d");
-    }
+  // function to handle bg color on scrooll 
+  // const [navBg, setNavBg] = useState("tranparent");
+  // const changeBackground = () => {
+  //   // console.log(window.scrollY);
+  //   if (window.scrollY < 300) {
+  //     setNavBg("transparent");
+  //   } else if (window.scrollY >= 300 && window.scrollY < 810) {
+  //     setNavBg("#10112e");
+  //   } else if (window.scrollY >= 810 && window.scrollY < 1770) {
+  //     setNavBg("#10112e");
+  //   } else if (window.scrollY >= 1770 && window.scrollY < 2720) {
+  //     setNavBg("#383656");
+  //   } else if (window.scrollY >= 2720) {
+  //     setNavBg("#25252d");
+  //   }
 
 
-  };
+  // };
+  // useEffect(() => {
+  //   window.addEventListener('scroll', changeBackground);
+  //   return () => {
+  //     window.removeEventListener('scroll', changeBackground);
+  //   };
+  // }, []);
+
+
+  // Nav hide on 
+let navBar = document.querySelectorAll('.nav-link');
+let navCollapse = document.querySelector('.navbar-collapse.collapse'); // grouping classes in javascript
+navBar.forEach(function(event){
+  event.addEventListener("click", function(){
+    navCollapse.classList.remove("show");
+    // bootstrap appends class show to show toggle list 
+    // so we are removing it 
+  })
+}) 
+
+  // for hiding the navbar on scroll
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [currentScroll, setCurrentScroll] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    setCurrentScroll(currentScrollPos);
+    // console.log(currentScrollPos + " " + prevScrollPos);
+    setVisible((prevScrollPos > currentScrollPos) || currentScrollPos < 10);
+    setPrevScrollPos(currentScrollPos);
+    // console.log(visible);
+  }
 
   useEffect(() => {
-    window.addEventListener('scroll', changeBackground);
-    return () => {
-      window.removeEventListener('scroll', changeBackground);
-    };
-  }, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
 
   const navBgStyle = {
-    backgroundColor: navBg,
-    transition: 'all 0.3s ease'
+    backgroundColor: currentScroll>300 && '#10112e',
+    transition: 'all 0.3s ease',
+    transform: !visible && 'translateY(-100px)'
   }
 
   return (
@@ -41,15 +74,8 @@ function Navbar() {
       <nav
         className={`navbar navbar-expand-md navigation-wrap`} style={navBgStyle}
       >
-        <div className="container custom-container">
-          <Link to="" className="navbar-brand h1 mb-0">
-            <img
-              // src={emlLogo}
-              alt="brand logo"
-              className="img-fluid"
-            />
-            {/* <!-- <span id="brand-name">EML</span> --> */}
-          </Link>
+        <div className="custom-container">
+
 
           <button
             type="button"

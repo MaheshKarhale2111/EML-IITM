@@ -13,10 +13,11 @@ export default function HomeHero() {
               <div className="col-md-6 order-md-1 order-2" data-aos="fade-in">
                 <h1>Welcome to EXTRA MURAL LECTURES</h1>
 
+
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
-                      .typeString("<h2>The Offcial Lec-Dem Body <br> of IIT Madras</h2>")
+                      .typeString("<h2>The Offcial Lec-Dem Body of IIT Madras</h2>")
 
                       .start();
                   }}

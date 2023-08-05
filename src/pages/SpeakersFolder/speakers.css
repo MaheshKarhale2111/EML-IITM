@@ -1,5 +1,5 @@
 .speakers {
-  background-color: #080434;
+  background-color: var(--primary-color);
   /* background-image: url(../../Images/speaker/speaker-page-bg.png); */
   padding-top: 8rem;
   background-size: repeat-y;
@@ -127,4 +127,26 @@
 .speakers a {
   text-decoration: none;
   color: inherit;
+}
+
+
+@media (max-width: 576px) {
+  .speaker-container {
+    /* background-color: red; */
+    width: 100%;
+    margin: auto;
+  }
+
+  .speakers .card {
+    padding-bottom: 2rem;
+    margin: 1.1rem 0.1rem;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.448) 0px 3px 3px 0px;
+  }
+
+  .speakers .card .text {
+    /* background-color: red; */
+    padding: 1.5rem 0.5rem 1rem 0.8rem;
+    /* padding-left: 30rem; */
+  }
 }

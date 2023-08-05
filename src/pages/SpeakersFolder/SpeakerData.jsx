@@ -96,8 +96,15 @@ const SpeakerData = [
         desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum soluta debitis esse. Repudiandae incidunt at quis esse voluptate qui! Illo laborum provident doloremque soluta inventore.",
         img : "https://upload.wikimedia.org/wikipedia/commons/6/6e/A._P._J._Abdul_Kalam.jpg",
         youtubeLink: "https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi"
-    }
-    
+    },
+    {
+        id: 13,
+        name: "Dr.Abhijeet Nair",
+        lectureTitle: "Abhudyay - build burn and fuck of",
+        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum soluta debitis esse. Repudiandae incidunt at quis esse voluptate qui! Illo laborum provident doloremque soluta inventore.",
+        img : "https://www.abhyudayiitm.com/images/teamMembers/AbhijeetRajendranNair.webp",
+        youtubeLink: "https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi"
+    }   
 
 ]
 

@@ -1,8 +1,10 @@
 #contactus {
-  background-color: #080434;
+  /* background-color: var(--primary-color); */
+  background: var(--primary-bg);
   /* height: 100vh; */
-  padding: 7rem 2rem;
-  height: 100vh;
+  padding: 5rem 2rem;
+  padding-bottom: 0;
+  /* height: 100vh; */
   /* position: absolute; */
 }
 
@@ -61,6 +63,22 @@
   #contactus .subtitle h3{
     font-weight: 500;
   }
+
+
+@media only screen and (max-width: 576px){
+  
+  #contactus .title h1 {
+    color: white;
+    font-size: 3.5rem;
+  }
+
+  #contactus h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+}
 
   
 

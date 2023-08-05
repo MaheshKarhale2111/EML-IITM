@@ -38,9 +38,7 @@ export default function ContactUsMain() {
             </div>
           </div>
         </div>
-
-
-        <Footer />
+      <Footer />
       </section>
     </>
 
