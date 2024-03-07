@@ -15,6 +15,10 @@ export default function HomeHero() {
 
 
                 <Typewriter
+                  options={{
+              
+                    delay:50,
+                  }}
                   onInit={(typewriter) => {
                     typewriter
                       .typeString("<h2>The Offcial Lec-Dem Body of IIT Madras</h2>")
