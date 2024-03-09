@@ -21,7 +21,7 @@ export default function HomeSnap() {
                 <div className="col-md-6 order-md-2 order-1">
                   <h2>Message From Director</h2>
                   <h1>{HomeContent[0].title}</h1>
-                  <h4>Director IIT Madras</h4>
+                  <h4>Director, IIT Madras</h4>
                 </div>
 
                 <div className="col-md-6 img-class order-md-1 order-2">
