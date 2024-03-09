@@ -23,6 +23,7 @@ export default function Footer() {
                                 <a href="https://www.instagram.com/emliitm/"><i className="fa-brands fa-instagram"></i></a>
                                 <a href="https://www.facebook.com/eml.iitm/"><i className="fa-brands fa-facebook"></i></a>
                                 <a href="https://www.linkedin.com/company/eml-iitm/"><i className="fa-brands fa-linkedin"></i></a>
+                                <a href="https://twitter.com/iitmadras?lang=en"><i className="fa-brands fa-twitter"></i></a>
                             </div>
                             <ul className="list-inline">
                                 <li className="list-inline-item"><a href="#">Download Brochure</a></li>

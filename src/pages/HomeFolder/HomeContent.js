@@ -1,6 +1,6 @@
 const HomeContent = [
   {
-    title: "Prof. V.Kamakoti",
+    title: "Prof. V. Kamakoti",
     content : [
       "The EML series of lectures is one of the prominent initiatives taken up by the students of IIT Madras to create awareness about the varied aspects of social and professional life outside the campus. In this series, the Institute has hosted many expert speakers and visionaries from different walks of life who have inspired the student community by sharing their experiences. ", 
       "I wish the EML team the best in their explorative journey of scaling new territories and heights."
