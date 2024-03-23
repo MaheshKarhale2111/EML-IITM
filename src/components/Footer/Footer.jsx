@@ -26,8 +26,8 @@ export default function Footer() {
                                 <a href="https://twitter.com/iitmadras?lang=en"><i className="fa-brands fa-twitter"></i></a>
                             </div>
                             <ul className="list-inline">
-                                <li className="list-inline-item"><a href="#">Download Brochure</a></li>
-                                <li className="list-inline-item"><a href="#">Home</a></li>
+                                <li className="list-inline-item"><a href="https://eml-iitm.netlify.app/">Download Brochure</a></li>
+                                <li className="list-inline-item"><a href="#home">Home</a></li>
                                 <li className="list-inline-item"><a href="#">Speakers</a></li>
                                 <li className="list-inline-item"><a href="#">Gallery</a></li>
                                 <li className="list-inline-item"><a href="#">Contact Us</a></li>

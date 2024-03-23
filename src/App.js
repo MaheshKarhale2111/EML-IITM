@@ -7,6 +7,7 @@ import HomeSnap from "./pages/HomeFolder/HomeSnap";
 import TeamMain from "./pages/TeamFolder/TeamMain";
 import ContactUsMain from "./pages/ContactUs/ContactUsMain";
 import GalleryMain from "./pages/Gallery/GalleryMain";
+
 function App() {
   return (
     <>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../../css/root.css";
 import "./Navbar.css";
-import { NavLink, Link } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 
 function Navbar() {
@@ -60,7 +60,7 @@ navBar.forEach(function(event){
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.addEventListener('scroll', handleScroll);
   });
 
   const navBgStyle = {
