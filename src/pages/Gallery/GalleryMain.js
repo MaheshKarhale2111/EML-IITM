@@ -10,10 +10,11 @@ export default function GalleryMain() {
         <>
             <section id="gallery">
             {/* <div className="container"> */}
-                <ReactGallery />
+                
+                <ReactGallery /> 
             {/* </div> */}
             </section>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

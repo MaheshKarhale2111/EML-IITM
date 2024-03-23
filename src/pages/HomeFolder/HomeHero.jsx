@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./HomeHero.css";
 import emlBannerLogo from "../../Images/brandKit/eml-banner-logo.png";
 import Typewriter from "typewriter-effect";
@@ -34,10 +35,15 @@ export default function HomeHero() {
                 <h1>Welcome to EXTRA MURAL LECTURES</h1>
                 <LoadTypewriter />
                 <div className="home-buttons mt-5">
-                  <button className="btn btn-lg main-btn">Speakers</button>
-                  <button className="btn btn-lg fill-btn ms-4">
-                    Contact Us
-                  </button>
+                  <Link to="./speakers">
+                    <button className="btn btn-lg main-btn">Speakers</button>
+                  </Link>
+
+                  <Link to="./contactus">
+                    <button className="btn btn-lg fill-btn ms-4">
+                      Contact Us
+                    </button>
+                  </Link>
                 </div>
               </div>
               <div

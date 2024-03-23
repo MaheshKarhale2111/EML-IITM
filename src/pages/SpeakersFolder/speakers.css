@@ -22,6 +22,7 @@
 
 .speakers .card {
   border-radius: 1rem;
+  padding: 0 2rem;
   
   background-image: url(../../Images/speaker/speaker-bg.png);
   background-size: cover;
