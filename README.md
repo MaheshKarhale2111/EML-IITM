@@ -15,9 +15,9 @@ The Extra-Mural Lectures (EML) is the flagship lecture body of IITMadras that fo
 
 We inherit a strong legacy of innovative initiatives like EML Social and EML Omnibus. The team takes pride in having invited and given the IITM Student community the opportunity to interact with distinguished personalities like Dr APJ Abdul Kalam, Ms Indra Nooyi, His Holiness the Dalai Lama, Mr Kailash Satyarthi, Sri Sri Ravi Shankar, Mr A R Rahman, Mr Viswanathan Anand, Mr Eleanor Catton, Mr SS Rajamouli and several others. The EML sessions arein the form of interactive lectures, debates, and discussions around topics concerning science, arts, culture and society, aiming at covering as diverse fields as possible.
 
-#Our Social Media Handles
+# Our Social Media Handles
 
-:yt [YouTube](https://www.youtube.com/@emliitm)  
+[YouTube](https://www.youtube.com/@emliitm)  
 [Instagram](https://www.instagram.com/emliitm/)  
 [Twitter](https://twitter.com/emliitm?lang=en)  
 
