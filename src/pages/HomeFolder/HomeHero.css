@@ -86,6 +86,9 @@
     display: none;
     /* padding-top: 2rem; */
   }
+  #home h4 {
+    line-height: 1rem;
+  }
   #home h2 {
     font-size: 1.9rem;
     /* letter-spacing: 1px; */

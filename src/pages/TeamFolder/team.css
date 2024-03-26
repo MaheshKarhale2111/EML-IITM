@@ -2,12 +2,12 @@
   background-color: var(--primary-color);
   background: var(--primary-bg);
   /* height: 100vh; */
-  padding: 7rem 2rem;
+  padding: 7rem 0rem;
   padding-bottom: 0;
 }
 
 #team .title {
-  background-image: url(../../Images/team/Teampic1.JPG);
+  background-image: url(../../Images/team/Teampic1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

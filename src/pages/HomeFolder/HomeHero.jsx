@@ -8,7 +8,7 @@ const LoadTypewriter = () => {
   return (
     <Typewriter
       options={{
-        delay: 50,
+        delay: 70,
       }}
       onInit={(typewriter) => {
         typewriter
