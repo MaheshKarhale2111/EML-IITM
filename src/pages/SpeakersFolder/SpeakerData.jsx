@@ -60,7 +60,7 @@ const SpeakerData = [
     {
         id: 9,
         name: "Indra Nooyi",
-        lectureTitle: "My Story",
+        lectureTitle: "Leadership in the Time of Turbulence",
         desc:"Indra Nooyi, as former CEO of PepsiCo, took transformative initiatives, emphasizing sustainable growth and corporate responsibility. Her strategic vision led to innovative product diversification and global expansion, reshaping PepsiCo's trajectory in the market.",
         img: "https://valiantceo.com/wp-content/uploads/2021/04/Indra-Nooyi.jpg",
         youtubeLink: "https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi"
@@ -100,7 +100,7 @@ const SpeakerData = [
     {
         id: 14,
         name: "Shashi Tharoor",
-        lectureTitle: "Abhudyay - build burn and fuck of",
+        lectureTitle: "",
         desc: "Shashi Tharoor, a renowned Indian politician and author, has dedicated his career to promoting diplomacy, advocating for social justice through his writings and speeches. His contributions span politics, literature, and international affairs, shaping conversations on democracy.        ",
         img : "https://static.toiimg.com/photo/76180117.cms",
         youtubeLink: "https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi"
