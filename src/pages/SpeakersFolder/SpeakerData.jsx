@@ -1,4 +1,4 @@
-import lama from '../../Images/speaker/try3.png'
+
 
 const SpeakerData = [
     {
