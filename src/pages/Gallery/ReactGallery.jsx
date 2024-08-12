@@ -2,7 +2,11 @@
 import React, { useState, useEffect } from "react";
 import "./gallery.css";
 import Masonry from "react-responsive-masonry";
-import ImagesData from "./ImageData";
+// import ImagesData from "./ImageData";
+
+const importAll = (r) => r.keys().map(r);
+const images = importAll(require.context('../../Images/gallery', false, /\.(png|jpe?g|svg)$/));
+images.sort(()=> Math.random() - 0.5)
 
 let col = 3;
 let windowWidth = window.innerWidth;
@@ -43,10 +47,10 @@ export default function ReactGallery() {
   const imgAction = (action) => {
     let i = data.i;
     if (action === 'next-img') {
-      setData({ img: ImagesData[i + 1], i: i + 1 });
+      setData({ img: images[i + 1], i: i + 1 });
     }
     if (action === 'prev-img') {
-      setData({ img: ImagesData[i - 1], i: i - 1 });
+      setData({ img: images[i - 1], i: i - 1 });
     }
     if (!action) {
       setData({ img: '', i: 0 });
@@ -83,16 +87,16 @@ export default function ReactGallery() {
 
       }
 
-      <Masonry columnsCount={colCount} gutter="12px" className="container gallery-container">
+      <Masonry columnsCount={colCount} gutter="22px" className="container gallery-container">
       {/* <h1>Page is under developement</h1> */}
 
-        {ImagesData.map((image, i) => (
+        {images.map((image, i) => (
           <img
             key={i}
             src={image}
             style={{ width: "100%", display: "block", cursor: "pointer" }}
             onClick={() => viewImage(image, i)}
-            data-aos="fade-up" data-aos-offset="100" data-aos-duration="350"
+            data-aos="fade-up" data-aos-offset="50" data-aos-duration="100" data-aos-anchor-placement="top-bottom"
           />
         ))}
       </Masonry>

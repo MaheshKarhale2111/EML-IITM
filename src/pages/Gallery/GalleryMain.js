@@ -1,7 +1,6 @@
 import React from 'react'
 import "./gallery.css"
 import ReactGallery from "./ReactGallery"
-import Footer from '../../components/Footer/Footer'
 
 
 
