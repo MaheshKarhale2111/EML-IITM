@@ -67,7 +67,7 @@ const SpeakerData = [
     }, 
     {
         id: 10,
-        name: "Viswanath Anand",
+        name: "Viswanathan Anand",
         lectureTitle: "The King's Gambit",
         desc:"Vishwanathan Anand, a chess grandmaster, has left an indelible mark on the world of chess through his strategic brilliance and excellence. His innovative style and numerous achievements have cemented his legacy as one of the greatest players in the history of the game.",
         img : "https://static.theprint.in/wp-content/uploads/2021/06/va.jpg",
