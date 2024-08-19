@@ -1,6 +1,6 @@
-# View the temporary deployment here 
+# View the  deployment here 
 
- [EML-IITM](https://eml-iitm.netlify.app/).
+ (https://eml-iitm.netlify.app/).
 
 ## Available Scripts
 
